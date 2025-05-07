@@ -30,10 +30,10 @@ function FormLivro() {
     }
 
     return (
-        <section className={estilo['sec-form-aluno']}>
+        <section className={estilo['sec-form-livro']}>
             <h1>Cadastro Livro</h1>
             <form action="post" onSubmit={(e) => { e.preventDefault(); handleSubmit(formData); }}
-                    className={estilo['form-aluno']}
+                    className={estilo['form-livro']}
                 >
                     <label htmlFor="">
                         Titulo
