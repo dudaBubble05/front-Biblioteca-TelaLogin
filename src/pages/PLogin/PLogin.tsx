@@ -1,6 +1,12 @@
 // Importa o componente de cabeçalho da aplicação
 import Cabecalho from "../../components/Cabecalho/Cabecalho";
 
+// Importa o componente que contém o formulário de cadastro de livro
+import FormLivro from "../../components/Formularios/FormLivros/FormLivros";
+
+// Importa o componente que contém o formulário de cadastro de aluno
+import FormAluno from "../../components/Formularios/FormAlunos/FormAluno";
+
 // Importa o componente que contém o formulário de login
 import LoginForm from "../../components/LoginForm/LoginForm";
 
@@ -15,7 +21,7 @@ function PLogin() {
             <Cabecalho />
 
             {/* Renderiza o formulário de login */}
-            <LoginForm />
+            <FormLivro />
 
             {/* Renderiza o rodapé da página */}
             <Rodape />
