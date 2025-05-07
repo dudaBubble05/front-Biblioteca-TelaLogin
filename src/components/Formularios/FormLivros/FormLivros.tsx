@@ -7,11 +7,11 @@ function FormLivro() {
         titulo: '',
         autor: '',
         editora: '',
-        anoPublicacao: '',
+        anoPublicacao: 0,
         isbn: '',
-        quantTotal:'',
-        quantDisponivel: '',
-        valorAquisicao: ''
+        quantTotal: 0,
+        quantDisponivel: 0,
+        valorAquisicao: 0
     });
 
     // Função para atualizar o state
@@ -20,7 +20,7 @@ function FormLivro() {
     };
 
     // função para recuperar dados do formulário e enviar para a requisição 
-    const handleSubmit = async (formData: { titulo: string; autor: string; editora: string; anoPublicacao: string; isbn: string; quantTotal: string; quantDisponivel: string; valorAquisicao: string;}) => {
+    const handleSubmit = async (formData: { titulo: string; autor: string; editora: string; anoPublicacao: number; isbn: string; quantTotal: number; quantDisponivel: number; valorAquisicao: number;}) => {
         const resposta = await LivroRequests.enviaFormularioLivro(JSON.stringify(formData));
         if(resposta) {
             alert('Livro cadastrado com sucesso.');
