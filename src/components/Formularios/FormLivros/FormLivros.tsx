@@ -98,6 +98,7 @@ function FormLivro() {
                             type="number"
                             name="quantTotal"
                             id="quantTotal"
+                            required
                             onChange={(e) => handleChange("quantTotal", e.target.value)}
                         />
                     </label>
@@ -108,6 +109,7 @@ function FormLivro() {
                             type="number"
                             name="quantDisponivel"
                             id="quantDisponivel"
+                            required
                             onChange={(e) => handleChange("quantDisponivel", e.target.value)}
                         />
                     </label>
