@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import estilo from '../FormLivros/FormAluno.module.css';
+import estilo from '../FormLivros/FormLivro.module.css';
 import LivroRequests from '../../../fetch/LivroRequests';
 
 function FormLivro() {
@@ -19,11 +19,11 @@ function FormLivro() {
         setFormData({ ...formData, [nome]: valor });
     };
 
-    // função para recuperar dados do formulário e enviar para a requisição
+    // função para recuperar dados do formulário e enviar para a requisição 
     const handleSubmit = async (formData: { titulo: string; autor: string; editora: string; anoPublicacao: string; isbn: string; quantTotal: string; quantDisponivel: string; valorAquisicao: string;}) => {
         const resposta = await LivroRequests.enviaFormularioLivro(JSON.stringify(formData));
         if(resposta) {
-            alert('Aluno cadastrado com sucesso.');
+            alert('Livro cadastrado com sucesso.');
         } else {
             alert('Erro ao cadastrar livro.');
         }
