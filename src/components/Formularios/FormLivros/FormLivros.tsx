@@ -120,7 +120,7 @@ function FormLivro() {
                             type="number"
                             name="valorAquisicao"
                             id="valorAquisicao"
-                            step={0,01}
+                            step={0.01}
                             onChange={(e) => handleChange("valorAquisicao", e.target.value)}
                         />
                     </label>
